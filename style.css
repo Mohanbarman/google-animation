@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:700&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --first: #398def;
+    --second: #e14639;
+    --third: #f8c303;
+    --fourth: #4685f7;
+    --fifth: #2fae4f;
+    --sixth: #e14639;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #292d3e;
+}
+
+#title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.google-title-wrapper {
+    display: block;
+    text-align: center;
+    font-size: 5em;
+}
+
+.google-title {
+    font-family: 'Noto Sans Hk';
+    margin-left: -20px;
+}
+
+.google-title:nth-child(1) {
+    color: var(--first);
+}
+
+.google-title:nth-child(2) {
+    color: var(--second);
+}
+
+.google-title:nth-child(3) {
+    color: var(--third);
+}
+
+.google-title:nth-child(4) {
+    color: var(--fourth);
+}
+
+.google-title:nth-child(5) {
+    color: var(--fifth);
+}
+
+.google-title:nth-child(6) {
+    color: var(--sixth);
+}
+
+footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+}
+
+footer span {
+    font-family: 'Roboto';
+    position: relative;
+    border-radius: 20px;
+    bottom: -30px;
+    font-size: 1.2em;
+    display: inline-block;
+    font-weight: 600;
+    color: rgb(198, 243, 238);
+    background-color: #485b74;
+    padding: 20px 40px 90px 40px;
+}
+
+
+/* -_-_-_-_-_-_-_-_-_-
+    ANIMATION CONTENT
+   -_-_-_-_-_-_-_-_-_- */
+
+.animation-container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation-wrapper {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    animation: dot-animation 3s infinite both ease;
+}
+
+.dot:first-child {
+    margin: 0px;
+}
+
+.dot:nth-child(1) {
+    background-color: var(--first);
+}
+
+.dot:nth-child(2) {
+    background-color: var(--second);
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+    background-color: var(--third);
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(4) {
+    background-color: var(--fourth);
+    animation-delay: 1.2s;
+}
+
+/* -=-=-=-=-=-=-
+     KeyFrames
+   -=-=-=-=-=-=- */
+
+@keyframes dot-animation{
+    0% {top: 0}
+    40% {top: 40px}
+    80% {top: -40px}
+    100% {top: 0}
+}
+
