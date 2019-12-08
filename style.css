@@ -72,23 +72,19 @@ footer span {
     font-family: 'Roboto';
     position: relative;
     border-radius: 20px;
-    bottom: -100px;
+    bottom: -1cm;
     font-size: 1.2em;
     display: inline-block;
     font-weight: 600;
     color: rgb(198, 243, 238);
     background-color: #485b74;
     padding: 20px 40px 90px 40px;
-    animation: slide-up-footer 1s 10s ease-in-out forwards,
-               start-moving-footer 2s 11s ease-in-out infinite forwards;
+    animation: slide-footer 1s 5s ease-in-out forwards;
 }
 
-@keyframes slide-up-footer {
-    to {transform: translateY(-70px)}
-}
-
-@keyframes start-moving-footer {
-    50% {transform: translateY(-100px)}
+@keyframes slide-footer {
+    40% {transform: translateY(-0.5cm)}
+    100% {transform: translateY(5cm)}
 }
 
 /* -_-_-_-_-_-_-_-_-_-
