@@ -80,8 +80,7 @@ footer span {
     background-color: #485b74;
     padding: 20px 40px 90px 40px;
     animation: slide-up-footer 1s 10s ease-in-out forwards,
-               start-moving-footer 2s 11s ease-in-out infinite forwards
-                ;
+               start-moving-footer 2s 11s ease-in-out infinite forwards;
 }
 
 @keyframes slide-up-footer {
@@ -117,7 +116,7 @@ footer span {
     border-radius: 50%;
     background-color: white;
     transition: all 1s;
-    animation: dot-animation 2s infinite ease both;
+    animation: dot-animation 1.5s infinite ease-in-out;
 }
 
 .dot:first-child {
@@ -130,17 +129,17 @@ footer span {
 
 .dot:nth-child(2) {
     background-color: var(--second);
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 .dot:nth-child(3) {
     background-color: var(--third);
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 
 .dot:nth-child(4) {
     background-color: var(--fourth);
-    animation-delay: 1.2s;
+    animation-delay: 0.4s;
 }
 
 /* -=-=-=-=-=-=-
@@ -148,5 +147,5 @@ footer span {
    -=-=-=-=-=-=- */
 
 @keyframes dot-animation{
-    50% {transform: translateY(60px)}
+    50% {transform: translateY(80px)}
 }
